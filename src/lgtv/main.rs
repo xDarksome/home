@@ -4,10 +4,10 @@ use structopt::StructOpt;
 
 #[derive(StructOpt)]
 struct Lgtv {
-    #[structopt(short = "u", long, env)]
+    #[structopt(env = "LGTV_URL", short = "u", long)]
     url: String,
-    #[structopt(short = "k", long, env)]
-    key: Option<String>,
+    #[structopt(env = "LGTV_KEY", short = "k", long, default_value = "")]
+    key: String,
     #[structopt(subcommand)]
     cmd: Cmd,
 }
@@ -22,7 +22,7 @@ enum Cmd {
 async fn main() {
     let lgtv = Lgtv::from_args();
 
-    let cfg = WebOsClientConfig::new(&lgtv.url, &lgtv.key.unwrap_or_default());
+    let cfg = WebOsClientConfig::new(&lgtv.url, &lgtv.key);
     let client = async { WebosClient::new(cfg).await.expect("client") };
 
     match lgtv.cmd {
