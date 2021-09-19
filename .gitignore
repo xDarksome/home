@@ -6,8 +6,7 @@
 !.config/qmk/
 !.config/rustfmt/
 
-!lgtv/
-lgtv/target
+!src/
 
 !.dir_colors
 !.gitconfig
