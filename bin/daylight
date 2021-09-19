@@ -1,0 +1,3 @@
+source /home/x/.config/lgtv.env
+/home/x/.cargo/bin/lgtv set-backlight 80
+redshift -P -O 6500

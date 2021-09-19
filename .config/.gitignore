@@ -5,3 +5,4 @@
 !rustfmt/
 
 !.gitignore
+!lgtv.env
