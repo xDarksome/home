@@ -7,7 +7,7 @@ struct Lgtv {
     #[structopt(short = "u", long, env)]
     url: String,
     #[structopt(short = "k", long, env)]
-    key: String,
+    key: Option<String>,
     #[structopt(subcommand)]
     cmd: Cmd,
 }
@@ -22,7 +22,7 @@ enum Cmd {
 async fn main() {
     let lgtv = Lgtv::from_args();
 
-    let cfg = WebOsClientConfig::new(&lgtv.url, &lgtv.key);
+    let cfg = WebOsClientConfig::new(&lgtv.url, &lgtv.key.unwrap_or_default());
     let client = async { WebosClient::new(cfg).await.expect("client") };
 
     match lgtv.cmd {
