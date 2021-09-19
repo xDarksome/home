@@ -1,11 +1,6 @@
 /*
 
 !.config/
-.config/*
-!.config/alacritty/
-!.config/qmk/
-!.config/rustfmt/
-
 !src/
 
 !.dir_colors
