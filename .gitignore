@@ -1,0 +1,14 @@
+/*
+
+!.config/
+.config/*
+!.config/alacritty/
+!.config/qmk/
+!.config/rustfmt/
+
+!lgtv/
+lgtv/target
+
+!.dir_colors
+!.gitconfig
+!.gitignore
