@@ -1,0 +1,117 @@
+{
+    "workbench.colorTheme": "Material Theme Palenight High Contrast",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": 400,
+    "terminal.integrated.fontFamily": "monospace",
+    "editor.fontSize": 20,
+    "terminal.integrated.fontSize": 16,
+    "editor.semanticTokenColorCustomizations": {
+        "[Material Theme Palenight High Contrast]": {
+            "enabled": true,
+            "rules": {
+                "string:rust": "#c792ea",
+                "number:rust": "#c792ea",
+                "boolean:rust": "#c792ea",
+                "builtinType:rust": "#ffcb6b",
+                "namespace:rust": "#80cbc4",
+                "struct:rust": "#ffcb6b",
+                "property:rust": "#eeffff",
+                "enum:rust": "#ffcb6b",
+                "enumMember:rust": "#eeffff",
+                "typeAlias:rust": "#ffcb6b",
+                "typeParameter:rust": "#f78c6c",
+                "interface:rust": "#c3e88d",
+                "method.trait:rust": "#c3e88d",
+                "method.trait.reference:rust": {
+                    "fontStyle": "italic",
+                    "foreground": "#c3e88d",
+                },
+                "derive:rust": {
+                    "fontStyle": "italic",
+                    "foreground": "#c3e88d"
+                },
+                "method:rust": "#82aaff",
+                "method.reference:rust": {
+                    "fontStyle": "italic",
+                    "foreground": "#82aaff"
+                },
+                "keyword:rust": "#A6ACCD",
+                "keyword.attribute:rust": "#f07178",
+                "keyword.async:rust": "#f07178",
+                "variable:rust": "#eeffff",
+                "parameter:rust": "#eeffff",
+                "selfKeyword:rust": "#eeffff",
+                "selfKeyword.crateRoot:rust": "#80cbc4",
+                "comment:rust": {
+                    "fontStyle": "italic",
+                    "foreground": "#676E95"
+                },
+                "macro:rust": "#f07178",
+                "attribute:rust": "#f07178",
+                "generic.attribute:rust": "#f07178",
+                "punctuation:rust": "#A6ACCD",
+                "formatSpecifier:rust": "#A6ACCD",
+                "lifetime:rust": "#89ddff",
+                "*.intraDocLink:rust": "#676E95"
+            }
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "[Material Theme Palenight High Contrast]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "entity.name.namespace.rust"
+                    ],
+                    "settings": {
+                        "foreground": "#c792ea"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.language.self.rust"
+                    ],
+                    "settings": {
+                        "foreground": "#eeffff"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.name.type.lifetime.rust"
+                    ],
+                    "settings": {
+                        "foreground": "#89ddff"
+                    }
+                }
+            ]
+        }
+    },
+    "workbench.colorCustomizations": {
+        "[Material Theme Palenight High Contrast]": {
+            "editorGroupHeader.tabsBackground": "#1b1e2b",
+            "editor.background": "#1b1e2b",
+            "breadcrumb.background": "#1b1e2b",
+            "tab.activeBackground": "#1b1e2b",
+            "tab.inactiveBackground": "#1b1e2b",
+            "tab.border": "#1b1e2b"
+        }
+    },
+    "rust-analyzer.inlayHints.chainingHints": false,
+    "rust-analyzer.inlayHints.enable": false,
+    "editor.renderWhitespace": "none",
+    "files.autoSave": "onFocusChange",
+    "workbench.editor.showTabs": false,
+    "cSpell.userWords": [
+        "deduplication"
+    ],
+    "window.zoomLevel": 2,
+    "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "compact",
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "editor.bracketPairColorization.enabled": false,
+    "clangd.path": "/var/home/x/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/14.0.3/clangd_14.0.3/bin/clangd",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.codeActionsOnSave": {}
+}

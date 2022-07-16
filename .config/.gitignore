@@ -3,6 +3,7 @@
 !alacritty/
 !qmk/
 !rustfmt/
+!VSCodium/User/settings.json
 
 !.gitignore
 !lgtv.env
